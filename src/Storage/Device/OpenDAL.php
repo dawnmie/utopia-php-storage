@@ -64,7 +64,7 @@ class OpenDAL extends Device
         try {
             $this->operator->write_binary($path, $binaryContent);
         } catch (Exception $writeException) {
-            throw new Exception('OpenDAL write failed: ' . $writeException->getMes sage());
+            throw new Exception('OpenDAL write failed: ' . $writeException->getMessage());
         }
         
         return 1;
